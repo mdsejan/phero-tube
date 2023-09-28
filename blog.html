@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phero Tube</title>
+
+    <!-- TailwindCSS and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-inter">
+
+    <header class="max-w-screen-2xl mx-auto">
+
+        <!-- Navbar -->
+        <nav class="flex justify-center items-center py-12 px-8 border-b-2">
+            <div class="lg:text-left">
+                <a href="/"><img class="w-[150px]" src="img/pherotubelogo.png" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-screen-md mx-auto">
+
+        <section class="py-12 px-8">
+            <h1 class="text-3xl font-bold mb-5"> The scope of var, let, and const</h1>
+
+            <h2 class="text-xl font-bold">Var</h2>
+            <p class="text-lg">The scope is global when a var variable is declared outside a function. This means that
+                any variable that is declared with var outside a function block is available for use in the whole
+                window. <br>
+
+                var is function scoped when it is declared within a function. This means that it is available and can be
+                accessed only within that function.</p>
+            <br>
+
+            <h2 class="text-xl font-bold">Let</h2>
+            <p class="text-lg">let is block scoped.
+                A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is
+                a block.
+
+                So a variable declared in a block with let is only available for use within that block.</p>
+            <br>
+            <h2 class="text-xl font-bold">Const</h2>
+            <p class="text-lg">const is also block scoped.
+                Like let declarations, const declarations can only be accessed within the block they were declared.</p>
+        </section>
+
+
+        <section class="py-12 px-8">
+            <h1 class="text-3xl font-bold mb-8">The use cases of null and undefined</h1>
+            <h2 class="text-xl font-bold">Null</h2>
+            <p class="text-lg mb-5">The null keyword in JavaScript is a falsy data type that denotes that the data type
+                is
+                null. Falsy type refers to the coercion of null to false during conditional statement executions.
+
+                Null is an object in JavaScript and represents primitive data types. A null value in JavaScript is used
+                for referring absence of any object value and if any function or variable returns null, then we can
+                infer that the object could not be created. If we pass null as the default parameter to any function
+                type it would take the ‘null’ as a value passed to it.</p>
+
+            <h4 class="text-xl font-semibold mb-2 text-pink-700">Use case of null</h4>
+            <ol class="text-md list-decimal list-inside">
+                <li class="mb-5"><strong>Initializing Variables:</strong> We can initialize a variable with null when we
+                    want to
+                    indicate that it doesn't currently have a meaningful value but will be assigned a value later.
+                </li>
+                <li class="mb-5"><strong>JSON Serialization:</strong> When converting JavaScript objects to JSON using
+                    JSON.stringify(), properties with null values are preserved in the resulting JSON string.
+                </li>
+                <li class="mb-5"><strong>Error Handling:</strong> In error handling, null can be used to represent the
+                    absence of an error when a function or operation returns a result. If no error occurred, you might
+                    return null to indicate success.
+                </li>
+                <li class="mb-5"><strong>Checking for Existence:</strong> We can use null to check if a variable or
+                    object property has been assigned a value or if it's still undefined.
+                </li>
+                <li class="mb-5"><strong>Placeholder in Data:</strong> In some cases, null is used as a placeholder
+                    value in data structures or databases to represent missing or unknown information.
+                </li>
+            </ol>
+            <br>
+
+            <h2 class="text-xl font-bold">Undefined</h2>
+            <p class="text-lg mb-5">undefined is a property of the global object. That is, it is a variable in global
+                scope.
+
+                In all non-legacy browsers, undefined is a non-configurable, non-writable property. Even when this is
+                not the case, avoid overriding it.
+
+                A variable that has not been assigned a value is of type undefined. A method or statement also returns
+                undefined if the variable that is being evaluated does not have an assigned value. A function returns
+                undefined if a value was not returned.</p>
+
+            <h4 class="text-xl font-semibold mb-2 text-pink-700">Use case of undefined</h4>
+            <ol class="text-md list-decimal list-inside">
+                <li class="mb-5"><strong>Implicit Absence:</strong> When a variable is declared but not assigned a
+                    value, it is automatically initialized to undefined. This is often the initial state of variables.
+                </li>
+                <li class="mb-5"><strong>Function Return Values:</strong> If a function doesn't explicitly return a
+                    value, JavaScript returns undefined by default.
+                </li>
+                <li class="mb-5"><strong>Missing Object Properties:</strong> When you attempt to access an object
+                    property that doesn't exist, JavaScript returns undefined.
+                </li>
+                <li class="mb-5"><strong>Function Arguments:</strong> If a function parameter is not provided with an
+                    argument, it is assigned the value undefined.
+                </li>
+                <li class="mb-5"><strong>Check for Variable Existence:</strong> You can use typeof or conditional
+                    statements to check if a variable exists or is undefined. This can be useful for error handling.
+                </li>
+
+            </ol>
+        </section>
+
+        <section class="py-12 px-8">
+            <h1 class="text-3xl font-bold mb-5">What is a REST API?</h1>
+            <p class="text-lg">Representational State Transfer (REST) is an architectural style that defines a set of
+                constraints to be
+                used for creating web services. REST API is a way of accessing web services in a simple and flexible way
+                without having any processing.</p>
+            <br>
+
+            <p class="text-lg">REST technology is generally preferred to the more robust Simple Object Access Protocol
+                (SOAP) technology
+                because REST uses less bandwidth, simple and flexible making it more suitable for internet usage. It’s
+                used to fetch or give some information from a web service. All communication done via REST API uses only
+                HTTP request.</p>
+        </section>
+
+        <section class="py-12 px-8">
+            <div class="flex justify-center items-center">
+                <a href="/" class="btn bg-[#FF1F3D] hover:bg-black text-white capitalize">Return to Home</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
